@@ -10,9 +10,9 @@ docker run --name pdtest1 -p 5444:5444 -d polardbo:test1
 
 ### change password
 
- docker exec -it pdtest1 bash
- /usr/local/polardb_o_current/bin/psql -U polardb -p 5444 -d postgres
- ALTER USER polardb WITH PASSWORD 'WVCmFZs841@';
+ docker exec -it pdtest1 bash   
+ /usr/local/polardb_o_current/bin/psql -U polardb -p 5444 -d postgres   
+ ALTER USER polardb WITH PASSWORD 'WVCmFZs841@';    
 
 
  ### connect with client tool
